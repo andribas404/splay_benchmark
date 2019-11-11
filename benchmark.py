@@ -70,5 +70,4 @@ for name, arg_list in zip(NAMES, ARGS):
     rows.append(row)
 
 df = pd.DataFrame(rows)
-pd.set_option('precision', 3)
-df.to_csv("results.csv", index=False)
+df.to_csv("results.csv", index=False, float_format="%.3f")
