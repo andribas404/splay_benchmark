@@ -8,7 +8,7 @@ COPY requirements.txt /opt
 RUN apt-get update \
     && echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections \
     # install packages
-    && apt-get install --no-install-recommends \
+    && apt-get -qq install --no-install-recommends \
         gcc \
         # required for download pypy
         wget \
