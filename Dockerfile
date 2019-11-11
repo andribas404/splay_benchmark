@@ -14,6 +14,7 @@ RUN apt-get update \
         wget \
         bzip2 \
         libgraphviz-dev \
+        libc6-dev \
     && pip wheel \
         --wheel-dir=/opt/wheelhouse \
         -r /opt/requirements.txt \
@@ -27,6 +28,10 @@ RUN apt-get update \
     # && make install
     # real	4m1.342s
     && echo "next"
+
+    # https://graphviz.gitlab.io/_pages/Download/Download_source.html
+    # ghostscript, pkg-config, swig
+    # skip smyrna
 
 
 FROM python:3.7-slim-buster
