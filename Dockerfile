@@ -25,6 +25,7 @@ RUN apt-get update \
     # && ./configure --without-x --prefix=/opt/local \
     # && make \
     # && make install
+    # real	4m1.342s
     && echo "next"
 
 
