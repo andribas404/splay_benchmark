@@ -12,6 +12,6 @@ Daniel Dominic Sleator and Robert Endre Tarjan. 1985. Self-adjusting binary sear
 DANIEL DOMINIC SLEATOR AND ROBERT ENDRE TARJAN
 AT&T Bell Laboratories, Murray Hill, NJ
 
-Сделано в школе MADE осень 2019г.
+MADE осень 2019г.
 
 Лицензия MIT
