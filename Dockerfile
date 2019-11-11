@@ -1,4 +1,7 @@
 FROM python:3.7-slim-buster
+
+COPY entrypoint.sh /
+
 RUN apt-get update \
     && echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections \
     # install packages
@@ -17,6 +20,7 @@ RUN apt-get update \
     && wget  -O /tmp/pypy.tar.bz2 https://bitbucket.org/pypy/pypy/downloads/pypy3.6-v7.2.0-linux64.tar.bz2 \
     && tar xjf /tmp/pypy.tar.bz2 -C /opt \
     && ln -s /opt/pypy3.6-v7.2.0-linux64/bin/pypy3 /usr/local/bin \
+    && chmod a+x /entrypoint.sh \
     # clean
     && rm -rf /var/lib/apt/lists/* \
     # add user
@@ -24,8 +28,6 @@ RUN apt-get update \
 
 ENV PYTHONUNBUFFERED=1 \
     PATH="${PATH}:/opt/benchmark"
-
-COPY entrypoint.sh /
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD ["sleep", "infinity"]
