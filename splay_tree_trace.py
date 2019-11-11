@@ -29,10 +29,10 @@ def for_all_methods(decorator):
     """
     def decorate(cls):
         members = inspect.getmembers(cls, predicate=inspect.isfunction)
-        for method_name, method_value in members:
-            if method_name in ("__init__", "draw"):
+        for name, value in members:
+            if name in ("__init__", "draw"):
                 continue
-            setattr(cls, method_name, decorator(method_value))
+            setattr(cls, name, decorator(value))
         return cls
     return decorate
 

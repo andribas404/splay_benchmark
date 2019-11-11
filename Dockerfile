@@ -17,6 +17,7 @@ RUN apt-get update \
         libtinfo5 \
         # graphviz
         graphviz \
+        libgraphviz-dev \
         imagemagick \
     && pip install --upgrade pip \
     && pip install --no-cache-dir -r /tmp/requirements.txt \
