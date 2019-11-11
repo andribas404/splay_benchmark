@@ -18,7 +18,7 @@ from splay_tree_orig import SplayTree
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-os.makedirs("graph", exist_ok = True)
+os.makedirs("graph", exist_ok=True)
 
 def for_all_methods(decorator):
     """
