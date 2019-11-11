@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Splay tree.
+"""
+Copyright 2019 Andrey Petukhov
+
+Splay tree.
 
 7_2. Солдаты Сплей
 Ограничение времени	1 секунда
@@ -369,7 +372,6 @@ class SplayTree:
             counter_child -= grand_child.counter
 
         child.counter = counter_child + node.counter
-
 
 
 class Worker:

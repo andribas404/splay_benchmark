@@ -12,12 +12,12 @@ RUNS = 5
 
 args_python = [
     "python",
-    "splay_tree.py",
+    "splay_tree_orig.py",
 ]
 
 args_pypy = [
     "pypy3",
-    "splay_tree.py",
+    "splay_tree_orig.py",
 ]
 
 args_cython = [

@@ -11,5 +11,5 @@ random.seed(100)
 random.shuffle(cmds)
 res = "\n".join(map(" ".join, cmds))
 with open("input_large.txt", "w") as f:
-    f.write("90000\n")
+    f.write(f"{MAX_SIZE}\n")
     f.write(res)

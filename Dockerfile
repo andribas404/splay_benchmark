@@ -1,6 +1,7 @@
 FROM python:3.7-slim-buster
 
 COPY entrypoint.sh /
+COPY requirements.txt /tmp
 
 RUN apt-get update \
     && echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections \
@@ -14,8 +15,11 @@ RUN apt-get update \
         wget \
         bzip2 \
         libtinfo5 \
+        # graphviz
+        graphviz \
+        imagemagick \
     && pip install --upgrade pip \
-    && pip install --no-cache-dir cython pandas \
+    && pip install --no-cache-dir -r /tmp/requirements.txt \
     # pypy install
     && wget  -O /tmp/pypy.tar.bz2 https://bitbucket.org/pypy/pypy/downloads/pypy3.6-v7.2.0-linux64.tar.bz2 \
     && tar xjf /tmp/pypy.tar.bz2 -C /opt \

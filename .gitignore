@@ -12,3 +12,6 @@ Makefile
 input_large.txt
 output*.txt
 /st
+/graph
+/png
+/final
