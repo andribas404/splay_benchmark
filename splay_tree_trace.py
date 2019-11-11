@@ -24,6 +24,8 @@ def for_all_methods(decorator):
     """
     Add decorator to all class methods.
 
+    https://stackoverflow.com/questions/6307761/how-to-decorate-all-functions-of-a-class-without-typing-it-over-and-over-for-eac/6307868#6307868
+
     :param decorator: decorator
     :return: decorated class
     """
