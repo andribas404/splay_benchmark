@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Copyright 2019 Andrey Petukhov
-Splay tree cython.
-"""
+"""Splay tree cython."""
 
 import splay_tree as st
 

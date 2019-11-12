@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 # cython: language_level=3
 """
-Copyright 2019 Andrey Petukhov
-
 Splay tree.
 
 7_2. Солдаты Сплей

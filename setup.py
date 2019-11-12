@@ -1,6 +1,4 @@
 """
-Copyright 2019 Andrey Petukhov
-
 Setup.
 
 python setup.py build_ext --inplace

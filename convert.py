@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Copyright 2019 Andrey Petukhov
-Convert .dot files to png
-"""
+"""Convert .dot files to png."""
 
 import os
 import subprocess
