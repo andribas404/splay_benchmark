@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Splay tree cython."""
+"""Splay tree using cython."""
 
 import splay_tree as st
 

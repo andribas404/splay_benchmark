@@ -16,6 +16,7 @@ logging.basicConfig(level=logging.INFO)
 
 os.makedirs("graph", exist_ok=True)
 
+
 def for_all_methods(decorator):
     """
     Add decorator to all class methods.
@@ -53,6 +54,7 @@ def draw_decorator(func):
         draw(tree, " after " + message)
         return res
     return wrapper
+
 
 def draw(tree, message):
     """Draw state."""

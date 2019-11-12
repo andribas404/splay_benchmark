@@ -107,7 +107,8 @@ class Node:
 
 
 class SplayTree:
-    """Splay Tree.
+    """
+    Splay Tree with implicit index.
 
     https://neerc.ifmo.ru/wiki/index.php?title=Splay-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE
 

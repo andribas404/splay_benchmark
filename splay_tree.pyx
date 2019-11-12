@@ -40,6 +40,7 @@ Splay tree.
 
 cdef class Node:
     """Tree Node."""
+
     cdef int val
     cdef int counter
     cdef Node _left
@@ -101,12 +102,14 @@ cdef class Node:
 
 
 cdef class SplayTree:
-    """Splay Tree.
+    """
+    Splay Tree with implicit index.
 
     https://neerc.ifmo.ru/wiki/index.php?title=Splay-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE
 
     http://www.cs.cmu.edu/~sleator/papers/self-adjusting.pdf
     """
+
     cdef Node _root
     cdef int _step
 

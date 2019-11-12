@@ -35,9 +35,6 @@ Splay tree.
 На каждую команду 1 (добавление в строй) вы должны выводить
 число K – номер позиции, на которую должен встать этот солдат
 (все стоящие за ним двигаются назад).
-
-Log: after cpplint
-
 */
 
 #include <iostream>
@@ -508,11 +505,14 @@ int main(void) {
         myCmd t = std::make_tuple(cmd, x);
         cmds.push_back(t);
     }
+
     Worker* worker = new Worker();
     vector<int>* res = worker->process(cmds, cmds.size());
+
     for (auto it=res->begin(); it != res->end(); it++) {
         std::cout << *it << std::endl;
     }
+
     delete res;
     delete worker;
     return 0;
