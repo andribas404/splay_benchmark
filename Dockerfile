@@ -46,6 +46,7 @@ RUN apt-get update \
         gcc \
         g++ \
         cmake \
+        make \
         gosu \
         # required for pypy
         libtinfo5 \
